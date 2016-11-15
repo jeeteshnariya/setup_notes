@@ -1,10 +1,13 @@
 # New Setup & Note's Files
 Important Setting and Note When Starting New Environments.! 
 
- 
- ********* View Running Docker containers
- 
+ Docker Basic Commands
+ ---------------
+
+ * View Running Docker containers
+ ```
  sudo docker ps -a -q
+ ```
  
  ********Stop / remove all Docker containers
  
