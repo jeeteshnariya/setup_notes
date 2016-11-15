@@ -1,7 +1,7 @@
 # New Setup & Note's Files
 Important Setting and Note When Starting New Environments.! 
 
-### :whale:Docker Basic Commands
+### :whale: Docker Basic Commands
 Using SUDO If Linux 
 
  ```ruby
@@ -25,7 +25,22 @@ Using SUDO If Linux
  docker run -i -t -p 80:80 {IMAGENAME} /bin/bash
 
  ```
- 
+### :octocat: Git Basic Commands 
 
+```ruby
+# Git command --help
+git clone
+git status
+# if not added new file   . OR -A  all file 
+git add {--help more detail}  
+# -m for msg what are we do with file
+git commit -m "Add Change Detail"  
+
+# now we are using push for file upload in github
+git push 
+# download from other pc on github same repo
+git pull  
+
+ ```
  
 
