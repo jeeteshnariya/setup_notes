@@ -1,44 +1,30 @@
 # New Setup & Note's Files
 Important Setting and Note When Starting New Environments.! 
 
- Docker Basic Commands
- ---------------
+### Docker Basic Commands
+ Using SUDO If Linux 
+ ```ruby
+ # View running containers
+ docker ps -a -q
 
- * View Running Docker containers
+ # View running containers
+ docker stop $(docker ps -a -q)
+ docker rm $(docker ps -a -q)
+
+ # Remove  Docker images {$$}
+ docker rmi -f {IMAGENAME OR CODE}
+ 
+ # View installed  Docker Images
+ docker images
+
+ # Run Images with shell {$$}
+ docker run -i -t {IMAGENAME} /bin/bash
+
+ # Run Images with shell forward with PORT -p 80:80
+ docker run -i -t -p 80:80 {IMAGENAME} /bin/bash
+
  ```
- sudo docker ps -a -q
- ```
  
- ********Stop / remove all Docker containers
- 
- 
- sudo docker stop $(docker ps -a -q)
- sudo docker rm $(docker ps -a -q)
 
- ******** Remove  Docker images
  
- sudo docker rmi -f IMAGENAME OR CODE
 
- ********* View install Docker Images ****
- 
- sudo docker images
- 
- ********** Run Images with shell
- 
- sudo docker run -i -t IMAGENAME /bin/bash
- 
-  ********** Run Images with shell forward with PORT -p 80:80
- 
- sudo docker run -i -t -p 80:80 IMAGENAME /bin/bash
- 
- ***********************  new image running containers  ******************
- 
- $ docker ps
-ID                  IMAGE               COMMAND             CREATED             STATUS              PORTS
-c3f279d17e0a        ubuntu:12.04        /bin/bash           7 days ago          Up 25 hours
-197387f1b436        ubuntu:12.04        /bin/bash           7 days ago          Up 25 hours
-$ docker commit c3f279d17e0a  svendowideit/testimage:version3
-f5283438590d
-$ docker images
-REPOSITORY                        TAG                 ID                  CREATED             SIZE
-svendowideit/testimage            version3            f5283438590d        16 seconds ago      335
