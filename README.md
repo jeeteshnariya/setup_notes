@@ -1,13 +1,14 @@
 # New Setup & Note's Files
 Important Setting and Note When Starting New Environments.! 
 
-### Docker Basic Commands
- Using SUDO If Linux 
+### :whale:Docker Basic Commands
+Using SUDO If Linux 
+
  ```ruby
  # View running containers
- docker ps -a -q
+ docker ps -a {s q f n f}
 
- # View running containers
+ # Stop running containers
  docker stop $(docker ps -a -q)
  docker rm $(docker ps -a -q)
 
