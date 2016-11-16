@@ -35,5 +35,5 @@ git push
 git pull  
  ```
  
-### EMOJI CHEAT SHEET
+### :smile: EMOJI CHEAT SHEET
 [Click Here For EMOJI CHEAT SHEET](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
