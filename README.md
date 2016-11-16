@@ -35,7 +35,7 @@ git commit -m "Add Change Detail"
 git push 
 # download from other pc on github same repo
 git pull 
-# File deleted thand recover it  
+# File deleted than recover it  
 git checkout {README.md}
  ```
  
