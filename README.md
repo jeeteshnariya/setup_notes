@@ -7,9 +7,11 @@ Using SUDO If Linux
 ```ruby
 # View running containers
 docker ps -a {s q f n f}
-# Stop running containers 
-docker stop $(docker ps -a -q)
+# Stop running containers __linux__ -- ALL  Stop 4 Stop RM 4 Remove
+docker stop $(docker ps -a -q)  
 docker rm $(docker ps -a -q)
+# Stop running containers __windows__ -- ALL  Stop 4 Stop RM 4 Remove
+docker ps -q -a | xargs docker rm
 # Remove  Docker images {$$}
 docker rmi -f {IMAGENAME OR CODE}
 # View installed  Docker Images
@@ -32,7 +34,9 @@ git commit -m "Add Change Detail"
 # now we are using push for file upload in github
 git push 
 # download from other pc on github same repo
-git pull  
+git pull 
+# File deleted thand recover it  
+git checkout {README.md}
  ```
  
 ### :smile: EMOJI CHEAT SHEET
