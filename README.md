@@ -35,6 +35,9 @@ git commit -m "Add Change Detail"
 git push 
 # download from other pc on github same repo
 git pull 
+## $$$ when i chage my git hub project into bitbucket
+#useful when setup new repo in bitbucket and already git init folder in pc it's chage to new repo on bitbucket 
+git remote set-url origin git://new.url.here
 # File deleted than recover it  
 git checkout {README.md}
  ```
