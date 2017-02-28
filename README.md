@@ -48,6 +48,10 @@ git push -u origin master
 git remote add origin https://github.com/jeeteshnariya/laravel_snippet.git
 git push -u origin master
 
+# Restore Last Commit and remove all chage's file clean to starting point
+git reset --hard HEAD~1
+git clean -df
+git checkout -- .
 # File deleted than recover it  
 git checkout {README.md}
  ```
