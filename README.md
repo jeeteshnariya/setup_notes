@@ -48,13 +48,26 @@ git push -u origin master
 git remote add origin https://github.com/jeeteshnariya/laravel_snippet.git
 git push -u origin master
 
-# Restore Last Commit and remove all chage's file clean to starting point
-git reset --hard HEAD~1
-git clean -df
-git checkout -- .
-# File deleted than recover it  
-git checkout {README.md}
- ```
+### Restore Last Commit and remove all chage's file clean to starting point
+
+#If you want to revert changes made to your working copy, do this:
+
+git checkout .
+
+#If you want to revert changes made to the index (i.e., that you have added), do this. Warning this will reset all of your unpushed commits to master!:
+git reset
+
+#If you want to revert a change that you have committed, do this:
+
+git revert <commit 1> <commit 2>
+
+#If you want to remove untracked files (e.g., new files, generated files):
+
+git clean -f
+
+#Or untracked directories (e.g., new or automatically generated directories):
+
+git clean -fd
  
 ### :smile: EMOJI CHEAT SHEET
 [Click Here For EMOJI CHEAT SHEET](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
