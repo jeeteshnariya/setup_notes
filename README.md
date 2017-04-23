@@ -60,5 +60,12 @@ git clean -f
 #Or untracked directories (e.g., new or automatically generated directories):
 git clean -fd
  ```
+ 
+##Android Install
+```
+set ANDROID_HOME=D:\android2 
+set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
+```
+
 ### :smile: EMOJI CHEAT SHEET
 [Click Here For EMOJI CHEAT SHEET](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
